@@ -48,18 +48,22 @@ manifest:
     infused-kim's zmk fork with mouse PR AND urob's improvements, which
     might be out-dated, but is known to be compatible with PS/2 mouse & TP
     driver module.
-    - name: zmk
-      remote: infused-kim
-      revision: pr-testing/mouse_ps2_module_base_urob
-      import: app/west.yml
+    # - name: zmk
+    #   remote: infused-kim
+    #   revision: pr-testing/mouse_ps2_module_base_urob
+    #   import: app/west.yml
 
+    - name: zmk
+      remote: badjeff
+      revision: main
+      import: app/west.yml
     #
     # Additional zmk modules
     #
 
     # Module for PS/2 mouse & TP driver
     - name: kb_zmk_ps2_mouse_trackpoint_driver
-      remote: infused-kim
+      remote: badjeff
       revision: main
 
   self:
