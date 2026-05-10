@@ -18,10 +18,10 @@ manifest:
 
     # Standard, stable zmk repo without mouse PR.
     # Not compatible with the PS/2 mouse & TP driver module.
-    - name: zmk
-      remote: zmkfirmware
-      revision: v0.1
-      import: app/west.yml
+    # - name: zmk
+    #   remote: zmkfirmware
+    #   revision: v0.1
+    #   import: app/west.yml
 
     # infused-kim's zmk fork with mouse PR, which might be a bit outdated, but
     # is known to be compatible with the PS/2 mouse & TP driver module.
@@ -45,13 +45,13 @@ manifest:
     #   revision: main
     #   import: app/west.yml
 
-    # infused-kim's zmk fork with mouse PR AND urob's improvements, which
-    # might be out-dated, but is known to be compatible with PS/2 mouse & TP
-    # driver module.
-    # - name: zmk
-    #   remote: infused-kim
-    #   revision: pr-testing/mouse_ps2_module_base_urob
-    #   import: app/west.yml
+    infused-kim's zmk fork with mouse PR AND urob's improvements, which
+    might be out-dated, but is known to be compatible with PS/2 mouse & TP
+    driver module.
+    - name: zmk
+      remote: infused-kim
+      revision: pr-testing/mouse_ps2_module_base_urob
+      import: app/west.yml
 
     #
     # Additional zmk modules
