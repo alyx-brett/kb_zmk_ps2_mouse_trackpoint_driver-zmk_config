@@ -59,6 +59,7 @@ manifest:
       remote: badjeff
       revision: main
       import: app/west.yml
+      
     #
     # Additional zmk modules
     #
